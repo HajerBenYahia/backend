@@ -38,7 +38,7 @@ pipeline {
                     stage('Build docker image'){
                                                  steps{
                                                      script{
-                                                        sh 'docker build -t /var/lib/jenkins/hajerbenyahia/springproject .'
+                                                        sh 'docker build -t hajerbenyahia/springproject .'
                                                      }
                                                  }
                                              }
