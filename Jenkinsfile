@@ -6,7 +6,7 @@ pipeline {
                     echo 'Pulling...';
                     git branch: 'main',
                  
-                    url : 'https://github.com/RanimELHAJ/backend.git';
+                    url : 'https://github.com/HajerBenYahia/backend.git';
                              }
                              }
 
@@ -38,7 +38,7 @@ pipeline {
                     stage('Build docker image'){
                                                  steps{
                                                      script{
-                                                        sh 'docker build -t ranimelhaj/springproject .'
+                                                        sh 'docker build -t hajerbenyahia/springproject .'
                                                      }
                                                  }
                                              }
@@ -47,7 +47,7 @@ pipeline {
 
                                                         steps {
                                                                     sh 'echo "login Docker ...."'
-                                                                	sh 'docker login -u ranimelhaj -p ranim123*'
+                                                                	sh 'docker login -u hajerbenyahia -p hajer1234'
                                                                  }  }
 
 
@@ -55,7 +55,7 @@ pipeline {
 
                            steps {
                                 sh 'echo "Docker is pushing ...."'
-                               	sh 'docker push ranimelhaj/springproject'
+                               	sh 'docker push hajerbenyahia/springproject'
                                   }  }
 
                               /*       stage('Docker compose') {
