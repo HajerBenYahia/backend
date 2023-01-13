@@ -45,7 +45,7 @@ pipeline {
                     stage('Build docker image'){
                                                  steps{
                                                      script{
-                                                        sh 'docker build -t hajerbenyahia/springproject .'
+                                                        sh 'docker build -t HajerBenYahia/springproject .'
                                                      }
                                                  }
                                              }
@@ -57,7 +57,7 @@ pipeline {
 
                            steps {
                                 sh 'echo "Docker is pushing ...."'
-                               	sh 'docker push hajerbenyahia/springproject'
+                               	sh 'docker push HajerBenYahia/springproject'
                                   }  }
 
                               /*       stage('Docker compose') {

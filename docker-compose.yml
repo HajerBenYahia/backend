@@ -12,7 +12,7 @@ services:
      - AppNet
 
   spring-boot:
-    image: hajer/springproject
+    image: HajerBenYahia/springproject
     container_name: spring
     ports:
       - 8089:8089
@@ -22,7 +22,7 @@ services:
       - AppNet
     restart: on-failure
   angular:
-    image: hajer/angularproject
+    image: HajerBenYahia/angularproject
     container_name: angular
     ports:
       - 80:80
