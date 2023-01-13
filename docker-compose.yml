@@ -30,6 +30,7 @@ services:
       - spring-boot
     networks:
       - AppNet
+  
 
 networks:
   AppNet:
