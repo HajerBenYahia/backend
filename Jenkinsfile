@@ -38,13 +38,6 @@ pipeline {
                                         }
                            }
 
-                           stage('Docker login') {
-
-                                                        steps {
-                                                                    sh 'echo "login Docker ...."'
-                                                                	sh 'docker login -u hajerbenyahia -p hajer1234'
-                                                                 }  }
-                             
 
                     stage('Build docker image'){
                                                  steps{
@@ -53,8 +46,13 @@ pipeline {
                                                      }
                                                  }
                                              }
+                      stage('Docker login') {
 
-                                              
+                                                        steps {
+                                                                    sh 'echo "login Docker ...."'
+                                                                	sh 'docker login -u hajerbenyahia -p hajer1234'
+                                                                 }  }
+                                                                        
 
 
           stage('Docker push') {
