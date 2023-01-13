@@ -1,8 +1,6 @@
 pipeline {
        agent {
-        docker {
-            args '-v $HOME:/var/lib/jenkins'
-        }
+        any
        }
         stages{
             stage('Checkout GIT'){
