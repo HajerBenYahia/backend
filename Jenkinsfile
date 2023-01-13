@@ -1,7 +1,7 @@
 pipeline {
        agent {
         docker {
-            args '-v $HOME:/home/jenkins'
+            args '-v $HOME:/var/lib/jenkins'
         }
        }
         stages{
