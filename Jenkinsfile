@@ -38,7 +38,7 @@ pipeline {
                     stage('Build docker image'){
                                                  steps{
                                                      script{
-                                                        sh 'echo root | sudo -S docker build -t hajerbenyahia/springproject .'
+                                                        sh 'echo hajer123 | sudo -S docker build -t hajerbenyahia/springproject .'
                                                      }
                                                  }
                                              }
