@@ -38,8 +38,9 @@ pipeline {
                     stage('Build docker image'){
                                                  steps{
                                                      script{
+                                                        sh 'pwd'
                                                         sh 'cd /home'
-
+                                                        sh 'pwd'
                                                         sh 'docker build -t hajerbenyahia/springproject .'
                                                      }
                                                  }
