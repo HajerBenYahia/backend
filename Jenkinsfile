@@ -65,7 +65,20 @@ pipeline {
 
                           steps {
                                sh 'docker-compose up -d'
-                                 }*/  }
+                                 }*/ 
+                                 
+                                 stage('Clean')
+           {
+            steps {
+            sh
+                sh 'docker image rmi hajerbenyahia/springproject'
+           
+                     
+            }
+         
+         
+         }
+                                  }
 
 
 
