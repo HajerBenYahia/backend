@@ -70,7 +70,7 @@ pipeline {
                                  stage('Clean')
            {
             steps {
-            sh
+
                 sh 'docker image rmi hajerbenyahia/springproject'
            
                      
