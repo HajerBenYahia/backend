@@ -67,6 +67,17 @@ pipeline {
                                sh 'docker-compose up -d'
                                  }*/ 
                                  
+                                 stage('MVN Deploy')
+           {
+            steps {
+
+                sh 'mvn deploy'
+           
+                     
+            }
+         
+         
+         }
                                  stage('Clean')
            {
             steps {
